@@ -254,13 +254,13 @@ hr {
 /* THEME FONTS */
 /* ----------- */
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Segoe UI Light', sans-serif;
 }
 body input,
 body textarea,
 body .btn,
 body button {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Segoe UI Light', sans-serif;
 }
 .lighter,
 .light,
@@ -273,7 +273,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Segoe UI Light', sans-serif;
 }
 h1.lighter,
 h2.lighter,
@@ -310,6 +310,160 @@ body {
     user-select: text;
     resize: none;
   }
+
+/**************************************
+              ГЛАВНАЯ
+***************************************/
+/* SECTIONS */
+.GIAC_main{
+    overflow: hidden;
+}
+
+.section-fullpage{
+    position: relative;
+    width:100%;
+    min-height:30em;
+    padding-bottom: 320px;
+}
+
+.section-wrapper{
+    position: relative;
+    bottom:0;
+    left:0;
+    width:100%;
+    z-index:1;
+    background:white;
+    text-align: center;
+}
+
+.section-wrapper::before{
+    position: absolute;
+    content:"";
+    top: -35px;
+    left: -10px;
+    width: 110%;
+    height: 100px;
+    background: #FFF;
+    z-index:-1;
+    
+    -ms-transform: rotate(-2.6deg);
+    -webkit-transform: rotate(-2.6deg);
+    -moz-transform: rotate(-2.6deg);
+      -o-transform: rotate(-2.6deg);
+         transform: rotate(-2.6deg);
+    outline: 5px solid transparent;
+}
+
+.section-wrapper::after{
+    position: absolute;
+    content:"";
+    bottom: -35px;
+    left: -10px;
+    width: 110%;
+    height: 100px;
+    background: #FFF;
+    z-index:-1;
+    
+    -ms-transform: rotate(-2.6deg);
+    -webkit-transform: rotate(-2.6deg);
+    -moz-transform: rotate(-2.6deg);
+      -o-transform: rotate(-2.6deg);
+         transform: rotate(-2.6deg);
+    outline: 5px solid transparent;
+}
+
+
+.content-wrapper{
+    position: relative;
+    display: flex;
+    width: 70%;
+    text-align: left;
+    color: #a7a7a7;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.content-wrapper h1{
+    text-transform: uppercase;
+    color:#939393;
+    font-size:3em;
+    font-weight: 400;
+    max-width: 450px;
+    margin-bottom: 10px;
+}
+
+.content-wrapper .txt-content{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.3em;
+    max-width: 45%;
+}
+
+.content-wrapper.fullwidth h1{
+    text-transform: uppercase;
+    color:#939393;
+    font-size:3em;
+    font-weight: 400;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.content-wrapper.fullwidth .txt-content{
+    display: block;
+    vertical-align: top;
+    line-height: 1.3em;
+    max-width: 100%;
+}
+
+#section-first{
+    background: url(../images/fd_04.jpg) no-repeat center center fixed; 
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#section-second{
+    background: url(../images/fd_02.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+      -o-background-size: cover;
+         background-size: cover;
+}
+
+#section-third{
+    background: url(../images/fd_05.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+      -o-background-size: cover;
+         background-size: cover;
+}
+
+#section-team{
+    background: white;
+    min-height: auto;
+    padding-bottom: 0;
+}
+
+/* cards */
+.card-cube {
+  width: 20vw;
+  min-width: 200px;
+  margin: .5rem .5rem 1rem .5rem;
+}
+.card-image {
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: cover;
+}
+.card.horizontal .card-image {
+    width: 20vw;
+    max-width: 40%;
+}
+.card.horizontal {
+  min-height: 300px;
+}
 
 /**************************
        main styles
@@ -350,7 +504,7 @@ header {
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
-  padding: 20px;
+  padding: 20px 20px 50px;
   z-index: 3;
 }
 
@@ -373,11 +527,13 @@ header {
 /* body */
 main { 
   width: 100%;
-  height: 600px;
+  height: auto;
+  overflow: hidden;
   display: inline-block; 
   position: relative; 
   z-index: 4; 
   background-color: white;
+  margin-bottom: -2.2vh;;
 }
 
 /* footer */
@@ -387,5 +543,32 @@ footer {
   display: inline-block; 
   position: relative; 
   z-index: 4; 
-  background-color: white;
+  background-color: #4c4c4c;
+  text-align: center;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    width: 70%;
+    padding: 5px 0;
+    font-family: Segoe UI Light;
+    font-weight: bold;
+    margin: 0 auto;
+    z-index: 2;
+}
+footer:before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../images/carre_point.png) repeat;
+    top: 0;
+    left: 0;
+    z-index: 3;
 }
