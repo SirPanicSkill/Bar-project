@@ -33,32 +33,111 @@
         </video>
         <div class="content">
           <h1>SPORT BAR</h1>
-          <p>технологии будущего уже среди нас</p>
+          <p style="margin-bottom: 10px;">технологии будущего уже среди нас</p>
           <!-- Use a button to pause/play the video with JavaScript -->
           <button id="myBtn" onclick="myFunction()">Pause</button>
         </div>
       </header>
-      <main></main>
-
-
-
-
-
-
+      <main>
+        <section class="section-fullpage" id="section-first">
+          <div class="section-wrapper">
+            <div class="content-wrapper">
+              <div class="col s12 m7">
+                <h2 class="header">Пример горизонтальной карточки</h2>
+                <div class="card horizontal">
+                  <div class="card-image" style="background-image: url(images/test.jpg);">
+                  </div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <p>Карточка для небольшой информации.</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">Это ссылка</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-fullpage" id="section-second">
+          <div class="section-wrapper">
+            <div class="content-wrapper">       
+              <div class="card card-cube sticky-action">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/office.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Позиция 1<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">Ссылка</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Лид<i class="material-icons right">close</i></span>
+                  <p>Информация о продукте.</p>
+                </div>
+              </div>
+              <div class="card card-cube sticky-action">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/office.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Позиция 2<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">Ссылка</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Лид<i class="material-icons right">close</i></span>
+                  <p>Информация о продукте.</p>
+                </div>
+              </div>       
+              <div class="card card-cube sticky-action">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/office.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Позиция 3<i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">Ссылка</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Лид<i class="material-icons right">close</i></span>
+                  <p>Информация о продукте.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-fullpage" id="section-third">
+          <div class="section-wrapper">
+            <div class="content-wrapper">    
+            <h2>Рандомный текст</h2>       
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
       <!-- SEO schema -->
       <footer itemscope itemtype="http://schema.org/LocalBusiness">
-          ООО «<span itemprop="name">Grebenik</span>»
-          <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-              <span itemprop="streetAddress">Ленина 1</span>
-              <span itemprop="addressLocality">Москва</span>,
-              <span itemprop="addressRegion">Московская обл.</span>
-              <meta itemprop="addressCountry" content="RU"/>
+          <div class="footer flow-text">
+            <p>ООО «<span itemprop="name">Grebenik</span>»</p><br/>
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <p>
+                  <span itemprop="streetAddress">улица Дмитриевского, 10</span><br/>
+                  <span itemprop="addressLocality">Москва</span>,
+                  <span itemprop="addressRegion">Московская обл.</span>
+                  <meta itemprop="addressCountry" content="RU"/>
+                </p>
+            </div><br/>
+            <p>
+              Время работы менеджера-консультанта:
+              <time itemprop="openingHours" datetime="Mo, Tu, We, Th, Fr, Sa, Su 10:00-21:00">10:00 - 21:00 Ежедневно</time>
+            </p>
+            <p>
+              <span itemprop="telephone">206-555-1234</span>.
+              <span itemprop="email">info@wikimedia.org</span>.
+              <a href="http://www.google.com" itemprop="url">http://google.com</a>.
+            </p>
           </div>
-          Время работы менеджера-консультанта:
-          <time itemprop="openingHours" datetime="Mo, Tu, We, Th, Fr, Sa, Su 10:00-21:00">10:00 - 21:00 Ежедневно</time>
-          <span itemprop="telephone">206-555-1234</span>.
-          <span itemprop="email">info@wikimedia.org</span>.
-          <a href="http://www.google.com" itemprop="url">http://google.com</a>.
       </footer>
       <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
