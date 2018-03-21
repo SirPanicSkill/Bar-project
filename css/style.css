@@ -351,6 +351,12 @@ nav {
 .carousel {
   height: calc(100vh - 64px) !important;
 }
+.carousel .indicators {
+  bottom: 30px;
+}
+.carousel.carousel-slider .carousel-fixed-item.with-indicators {
+  bottom: 98px;
+}
 
 /***** body *****/
 main { 
