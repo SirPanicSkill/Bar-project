@@ -575,8 +575,13 @@ a.zindex_link {
   only screen and (-o-min-device-pixel-ratio: 13/10),
   only screen and (min-resolution: 120dpi),
   (pointer:coarse) {
-   #section-first, #section-second, #section-third {
-       /*background-attachment: scroll !important;
-       background-size: contain !important;*/
+   #section-first {
+      background: url(../images/fd_04_mobile.jpg) no-repeat center center scroll;
+   }
+   #section-second {
+      background: url(../images/fd_02_mobile.jpg) no-repeat center center scroll;
+   }
+   #section-third {
+      background: url(../images/fd_05_mobile.jpg) no-repeat center center scroll;
    }
 }
