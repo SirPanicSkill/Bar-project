@@ -465,39 +465,48 @@ main {
   max-width: 100%;
 }
 #section-first{
-  background: url(../images/fd_04.jpg) no-repeat center center scroll; 
+  background-image: url(../images/fd_04.jpg); 
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-attachment: fixed;
   -webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    background-size: cover;
+  -moz-background-size: 100%; 
+  -o-background-size: 100%; 
+  background-size: 100%; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
   height: 100%;
 }
 #section-second{
-  background: url(../images/fd_02.jpg) no-repeat center center scroll; 
+  background: url(../images/fd_02.jpg); 
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-attachment: fixed;
   -webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    background-size: cover;
+  -moz-background-size: 100%; 
+  -o-background-size: 100%; 
+  background-size: 100%; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
   height: 100%;
 }
 #section-third{
-  background: url(../images/fd_05.jpg) no-repeat center center scroll; 
+  background: url(../images/fd_05.jpg); 
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-attachment: fixed;
   -webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    background-size: cover;
+  -moz-background-size: 100%; 
+  -o-background-size: 100%; 
+  background-size: 100%; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
   height: 100%;
 }
 #section-team{
@@ -576,15 +585,21 @@ a.zindex_link {
   only screen and (min-resolution: 120dpi),
   (pointer:coarse) {
    #section-first {
-      background: url(../images/fd_04_mobile.jpg) no-repeat 50% 100% scroll;
+      -webkit-background-size: 100%; 
+  -moz-background-size: 100%; 
+  -o-background-size: 100%; 
+  background-size: 100%;
    }
    #section-second {
-      background: url(../images/fd_02_mobile.jpg) no-repeat 50% 100% scroll;
+      -webkit-background-size: 100%; 
+  -moz-background-size: 100%; 
+  -o-background-size: 100%; 
+  background-size: 100%;
    }
    #section-third {
-      background: url(../images/fd_05_mobile.jpg) no-repeat 50% 100% scroll;
-   }
-   footer {
-    display: none !important;
+      -webkit-background-size: 100%; 
+  -moz-background-size: 100%; 
+  -o-background-size: 100%; 
+  background-size: 100%;
    }
 }
