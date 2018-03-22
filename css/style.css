@@ -576,12 +576,15 @@ a.zindex_link {
   only screen and (min-resolution: 120dpi),
   (pointer:coarse) {
    #section-first {
-      background: url(../images/fd_04_mobile.jpg) no-repeat center center scroll;
+      background: url(../images/fd_04_mobile.jpg) no-repeat 50% 100% scroll;
    }
    #section-second {
-      background: url(../images/fd_02_mobile.jpg) no-repeat center center scroll;
+      background: url(../images/fd_02_mobile.jpg) no-repeat 50% 100% scroll;
    }
    #section-third {
-      background: url(../images/fd_05_mobile.jpg) no-repeat center center scroll;
+      background: url(../images/fd_05_mobile.jpg) no-repeat 50% 100% scroll;
+   }
+   footer {
+    display: none !important;
    }
 }
