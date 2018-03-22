@@ -558,9 +558,10 @@ a.zindex_link {
 ***************************************/
 @media  only screen and (-webkit-min-device-pixel-ratio: 1.3),
   only screen and (-o-min-device-pixel-ratio: 13/10),
-  only screen and (min-resolution: 120dpi) {
+  only screen and (min-resolution: 120dpi),
+  (pointer:coarse) {
    #section-first, #section-second, #section-third {
-       /*background-attachment: scroll;*/
-       /*background-size: contain;*/
+       background-attachment: scroll !important;
+       background-size: contain !important;
    }
 }
