@@ -465,7 +465,7 @@ main {
   max-width: 100%;
 }
 #section-first{
-  background: url(../images/fd_04.jpg) no-repeat center center fixed; 
+  background: url(../images/fd_04.jpg) no-repeat center center scroll; 
   /*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -479,7 +479,7 @@ main {
   background-size: cover;*/
 }
 #section-third{
-  background: url(../images/fd_05.jpg) no-repeat center center fixed; 
+  background: url(../images/fd_05.jpg) no-repeat center center scroll; 
   /*-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -562,6 +562,6 @@ a.zindex_link {
   (pointer:coarse) {
    #section-first, #section-second, #section-third {
        background-attachment: scroll !important;
-       background-size: contain !important;
+       /*background-size: contain !important;*/
    }
 }
