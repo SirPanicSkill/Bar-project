@@ -466,24 +466,27 @@ main {
 }
 #section-first{
   background: url(../images/fd_04.jpg) no-repeat center center scroll; 
-  /*-webkit-background-size: cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;*/
+  background-size: cover;
+  height: 100%;
 }
 #section-second{
-  background: url(../images/fd_02.jpg) no-repeat center center fixed; 
-  /*-webkit-background-size: cover;
+  background: url(../images/fd_02.jpg) no-repeat center center scroll; 
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;*/
+  background-size: cover;
+  height: 100%;
 }
 #section-third{
   background: url(../images/fd_05.jpg) no-repeat center center scroll; 
-  /*-webkit-background-size: cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;*/
+  background-size: cover;
+  height: 100%;
 }
 #section-team{
   background: white;
@@ -561,7 +564,7 @@ a.zindex_link {
   only screen and (min-resolution: 120dpi),
   (pointer:coarse) {
    #section-first, #section-second, #section-third {
-       background-attachment: scroll !important;
-       /*background-size: contain !important;*/
+       /*background-attachment: scroll !important;
+       background-size: contain !important;*/
    }
 }
