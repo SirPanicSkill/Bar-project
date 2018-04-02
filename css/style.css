@@ -14,6 +14,14 @@
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: "Georgia";
+  src:
+    local("Georgia"),
+    url("../fonts/Georgia/georgia.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 /* normalize */
 html,
 body,
@@ -262,13 +270,13 @@ hr {
 /* THEME FONTS */
 /* ----------- */
 body {
-  font-family: 'Segoe UI Light', sans-serif;
+  font-family: 'Georgia', sans-serif;
 }
 body input,
 body textarea,
 body .btn,
 body button {
-  font-family: 'Segoe UI Light', sans-serif;
+  font-family: 'Georgia', sans-serif;
 }
 .lighter,
 .light,
@@ -281,7 +289,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Segoe UI Light', sans-serif;
+  font-family: 'Georgia', sans-serif;
 }
 h1.lighter,
 h2.lighter,
@@ -340,13 +348,25 @@ header {
   z-index: 2;*/
 }
 nav {
-  background-color: #26a69a;
+  background-color: #41000c;
   position: relative;
   z-index: 5;
+}
+nav .brand-logo {
+  width: calc(15% + 80px);
+  height: 100%;
+  background-image: url(../images/Legendario_wide_white.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .progress {
   position: absolute;
   margin: 0;
+  background-color: #ab3e53;
+}
+.progress .indeterminate {
+  background-color: #731d2e;
 }
 .carousel {
   height: calc(100vh - 64px) !important;
@@ -535,7 +555,7 @@ main {
 }
 
 /***** footer *****/
-footer {
+footer.page-footer {
   width: 100%;
   height: auto; 
   display: inline-block; 
@@ -554,7 +574,7 @@ footer {
   text-align: center;
   width: 70%;
   padding: 5px 0;
-  font-family: Segoe UI Light;
+  font-family: Georgia;
   font-weight: bold;
   margin: 0 auto;
   z-index: 2;
@@ -575,7 +595,13 @@ a.zindex_link {
   position: relative;
   z-index: 10;
 }
-
+footer.page-footer .footer-copyright {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+footer .btn-floating {
+  background-color: #41000c63;
+  box-shadow: 0px 0px 3px #ffffff8f;
+}
 
 /**************************************
               MEDIA
