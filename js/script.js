@@ -28,6 +28,10 @@ $(document).ready(function(){
     $('.progress').delay(250).fadeOut(1500);
     //social net
     $('#soc-net').click('on', function(){
-        $('.soc-net-items').toggleClass('scale-in');
+        $('.soc-net-items').addClass('scale-in');
+        $('.soc-net-bck').addClass('disp-block').click('on', function(){
+            $('.soc-net-items').removeClass('scale-in');
+            $('.soc-net-bck').removeClass('disp-block');
+        });
     });
 });

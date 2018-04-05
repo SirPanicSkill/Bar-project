@@ -388,9 +388,17 @@ nav .brand-logo {
   position: fixed;
   bottom: 0;
   background-color: #41000ce0;
-  z-index: 3;
-
+  z-index: 5;
 }
+  .soc-net-bck {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+  }
+  .disp-block { display: block; }
   .soc-net-items ul li {
     display: inline-block;
   }
