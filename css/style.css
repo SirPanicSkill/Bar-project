@@ -380,6 +380,32 @@ nav .brand-logo {
 .navbar-fixed {
   z-index: 999;
 }
+/*soc-net*/
+.soc-net-items {
+  display: block;
+  width: 100%;
+  transform: scale(0);
+  position: fixed;
+  bottom: 0;
+  background-color: #41000ce0;
+  z-index: 3;
+
+}
+  .soc-net-items ul li {
+    display: inline-block;
+  }
+  .soc-btn {
+    display: inline-block;
+    width: 5rem;
+    height: 3rem;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+    .soc-btn.soc-vk { background-image: url(../images/vk.png); }
+    .soc-btn.soc-fb { background-image: url(../images/fb.png); }
+    .soc-btn.soc-tw { background-image: url(../images/tw.png); }
+    .soc-btn.soc-insta { background-image: url(../images/insta.png); }
 
 /***** body *****/
 main { 

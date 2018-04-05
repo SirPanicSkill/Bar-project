@@ -19,13 +19,15 @@ $(function() {
       draggable: true, // Choose whether you can drag to open on touch screens,
       onOpen: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is opened
       onClose: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
-    }
-  );
+    });
 });
 
 /* после загрузки страницы */
 $(document).ready(function(){
     //прелоадер
     $('.progress').delay(250).fadeOut(1500);
-
+    //social net
+    $('#soc-net').click('on', function(){
+        $('.soc-net-items').toggleClass('scale-in');
+    });
 });
