@@ -27,9 +27,9 @@ $(document).ready(function(){
     //прелоадер
     $('.progress').delay(250).fadeOut(1500);
     //social net
-    $('#soc-net').click('on', function(){
+    $('#soc-net').bind('click touchstart', function(){
         $('.soc-net-items').addClass('scale-in');
-        $('.soc-net-bck').addClass('disp-block').click('on', function(){
+        $('.soc-net-bck').addClass('disp-block').bind('click touchstart', function(){
             $('.soc-net-items').removeClass('scale-in');
             $('.soc-net-bck').removeClass('disp-block');
         });
