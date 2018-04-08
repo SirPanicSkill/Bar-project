@@ -20,6 +20,28 @@ $(function() {
       onOpen: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is opened
       onClose: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
     });
+    //yandex maps
+    jQuery('.map-open').bind('click touchstart', function(){
+        jQuery('#map').slideToggle('slow');
+    });
+    ymaps.ready(init);
+        var myMap, 
+            myPlacemark;
+
+        function init(){ 
+            myMap = new ymaps.Map("map", {
+                center: [55.708791, 37.885457],
+                zoom: 16
+            }); 
+            
+            myPlacemark = new ymaps.Placemark([55.708791, 37.885457], {
+                hintContent: 'Москва!',
+                balloonContent: 'Столица России'
+            });
+            
+            myMap.geoObjects.add(myPlacemark);
+        }
+    
 });
 
 /* после загрузки страницы */
