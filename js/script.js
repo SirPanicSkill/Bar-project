@@ -21,8 +21,12 @@ $(function() {
       onClose: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
     });
     //yandex maps
-    jQuery('.map-open').bind('click touchstart', function(){
-        jQuery('#map').slideToggle('slow');
+    $('.map-open').bind('click touchstart', function(){
+        if ($('#map').is(':hidden')) {
+            $('#map').show('slow');
+          } else {
+            $('#map').slideUp();
+          };
     });
     ymaps.ready(init);
         var myMap, 

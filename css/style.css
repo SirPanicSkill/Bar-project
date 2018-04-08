@@ -575,6 +575,15 @@ main {
 }
 
 /*about us*/
+.ya-map {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.map-open {
+  margin-bottom: 20px;
+}
 #map {
   display: none;
 }
