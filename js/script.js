@@ -28,7 +28,11 @@ $(function() {
             $('#map').slideUp();
           };
     });*/
-    $('.map-open').bind('click touchstart', function(){
+    $('.map-open').bind('click touchend', function(){
+        if(event.handled === false) return
+        event.stopPropagation();
+        event.preventDefault();
+        event.handled = true;
         $('#map').fadeToggle('slow');
     });
     ymaps.ready(init);
@@ -42,8 +46,8 @@ $(function() {
             }); 
             
             myPlacemark = new ymaps.Placemark([55.708791, 37.885457], {
-                hintContent: 'Москва!',
-                balloonContent: 'Столица России'
+                hintContent: 'LEGENDARIO',
+                balloonContent: 'Это все, что тебе нужно!'
             });
             
             myMap.geoObjects.add(myPlacemark);
