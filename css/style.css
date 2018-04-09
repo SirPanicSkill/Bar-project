@@ -436,7 +436,6 @@ main {
   position: relative;
   width:100%;
   min-height:30em;
-  padding-bottom: 320px;
 }
 .section-wrapper{
   position: relative;
@@ -520,30 +519,35 @@ main {
   line-height: 1.3em;
   max-width: 100%;
 }
-#section-first{
+div[class*=splitter] {
+  display: block;
+  width: 100%;
+  height: 320px;
+}
+.splitter-1{
   background-image: url(../images/fd_04.jpg); 
   background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-position: 50% 50%;
   -webkit-background-size: 100%; 
   -moz-background-size: 100%; 
   -o-background-size: 100%; 
   background-size: 100%;
   height: 100%;
 }
-#section-second{
+.splitter-2{
   background: url(../images/fd_02.jpg); 
   background-repeat: no-repeat;
-  background-position: 50% 0%;
+  background-position: 50% 50%;
   -webkit-background-size: 100%; 
   -moz-background-size: 100%; 
   -o-background-size: 100%; 
   background-size: 100%;
   height: 100%;
 }
-#section-third{
+.splitter-3{
   background: url(../images/fd_05.jpg); 
   background-repeat: no-repeat;
-  background-position: 50% 0%;
+  background-position: 50% 50%;
   -webkit-background-size: 100%; 
   -moz-background-size: 100%; 
   -o-background-size: 100%; 
@@ -648,22 +652,13 @@ footer .btn-floating {
   only screen and (-o-min-device-pixel-ratio: 13/10),
   only screen and (min-resolution: 120dpi),
   (pointer:coarse) {
-   #section-first {
-      -webkit-background-size: 100%; 
-  -moz-background-size: 100%; 
-  -o-background-size: 100%; 
-  background-size: 100%;
-   }
-   #section-second {
-      -webkit-background-size: 100%; 
-  -moz-background-size: 100%; 
-  -o-background-size: 100%; 
-  background-size: 100%;
-   }
-   #section-third {
-      -webkit-background-size: 100%; 
-  -moz-background-size: 100%; 
-  -o-background-size: 100%; 
-  background-size: 100%;
-   }
+  .splitter-1 {
+    background: url(../images/fd_04_mobile.jpg);
+  }
+  .splitter-2 {
+    background: url(../images/fd_02_mobile.jpg);
+  }
+  .splitter-3 {
+    background: url(../images/fd_05_mobile.jpg);
+  }
 }
