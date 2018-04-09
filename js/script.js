@@ -21,12 +21,15 @@ $(function() {
       onClose: function(el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
     });
     //yandex maps
-    $('.map-open').bind('click touchstart', function(){
+    /*$('.map-open').bind('click touchstart', function(){
         if ($('#map').is(':hidden')) {
             $('#map').show('slow');
           } else {
             $('#map').slideUp();
           };
+    });*/
+    $('.map-open').bind('click touchstart', function(){
+        $('#map').fadeToggle('slow');
     });
     ymaps.ready(init);
         var myMap, 

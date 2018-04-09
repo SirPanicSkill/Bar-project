@@ -51,6 +51,7 @@ h5 {
   text-transform: uppercase;
   margin: 0;
   width: 100%;
+  text-align: center;
 }
 h1 {
   font-size: 36px;
@@ -583,6 +584,10 @@ main {
 }
 .map-open {
   margin-bottom: 20px;
+  background-color: #41000d;
+}
+.map-open:hover {
+  background-color:#41000dc4;
 }
 #map {
   display: none;
