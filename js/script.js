@@ -67,4 +67,15 @@ $(document).ready(function(){
             $('.soc-net-bck').removeClass('disp-block');
         });
     });
+    //слайдер
+    $('.barCarousel').slick({
+        arrows: false,
+        mobileFirst: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
 });

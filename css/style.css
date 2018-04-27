@@ -370,15 +370,38 @@ nav .brand-logo {
 .progress .indeterminate {
   background-color: #731d2e;
 }
-.carousel {
-  height: calc(100vh - 64px) !important;
+/*carousel*/
+.wrapperCarousel {
+  height: calc(100% - 64px);
+  position: relative;
 }
-.carousel .indicators {
-  bottom: 30px;
+.barCarousel, .barCarousel div {
+  height: 100%;
 }
-.carousel.carousel-slider .carousel-fixed-item.with-indicators {
-  bottom: 98px;
+.carousel-fixed-item {
+  position: absolute;
+  left: calc(50% - 100px);
+  bottom: 100px;
 }
+div[class*='barCarousel-'] {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+  .barCarousel-1 {
+    background-image: url(../images/backgr.jpg);
+  }
+  .barCarousel-2 {
+    background-image: url(../images/backgr2.jpg);
+  }
+  .barCarousel-3 {
+    background-image: url(../images/backgr3.jpg);
+  }
+  .barCarousel-4 {
+    background-image: url(../images/backgr4.jpg);
+  }
+
+
 .navbar-fixed {
   z-index: 999;
 }
