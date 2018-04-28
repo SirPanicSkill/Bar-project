@@ -59,8 +59,16 @@ $(document).ready(function(){
     $('.progress').delay(250).fadeOut(1500);
     //social net
     $('#soc-net').bind('click touchend', function(){
+        if(event.handled === false) return
+        event.stopPropagation();
+        event.preventDefault();
+        event.handled = true;
         $('.soc-net-items').addClass('scale-in');
         $('.soc-net-bck').addClass('disp-block').bind('click touchend', function(){
+            if(event.handled === false) return
+            event.stopPropagation();
+            event.preventDefault();
+            event.handled = true;
             $('.soc-net-items').removeClass('scale-in');
             $('.soc-net-bck').removeClass('disp-block');
         });
