@@ -383,10 +383,14 @@ nav .brand-logo {
   width: 100%;
   background-color: rgba(0,0,0,0.55);
 }
+.barBck > * {
+  color: white;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+}
 .carousel-fixed-item {
   position: absolute;
   left: calc(50% - 90px);
-  bottom: 15%;
+  bottom: 30%;
 }
 div[class*='barCarousel-'] {
   background-repeat: no-repeat;
