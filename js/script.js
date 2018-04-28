@@ -2,8 +2,6 @@
 $(function() {
     "use strict";
     $(".button-collapse").sideNav();
-    //карусель
-    $('.carousel.carousel-slider').carousel({fullWidth: true, indicators: true});
     //scrollFire
     var options = [
         {selector: '.fade1', offset: 200, callback: function(el) { Materialize.fadeInImage($(el)); } },
@@ -60,9 +58,9 @@ $(document).ready(function(){
     //прелоадер
     $('.progress').delay(250).fadeOut(1500);
     //social net
-    $('#soc-net').bind('click touchstart', function(){
+    $('#soc-net').bind('click touchend', function(){
         $('.soc-net-items').addClass('scale-in');
-        $('.soc-net-bck').addClass('disp-block').bind('click touchstart', function(){
+        $('.soc-net-bck').addClass('disp-block').bind('click touchend', function(){
             $('.soc-net-items').removeClass('scale-in');
             $('.soc-net-bck').removeClass('disp-block');
         });
