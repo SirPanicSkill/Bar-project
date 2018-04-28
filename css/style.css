@@ -372,16 +372,21 @@ nav .brand-logo {
 }
 /*carousel*/
 .wrapperCarousel {
-  height: calc(100% - 64px);
+  height: 100%;
   position: relative;
 }
 .barCarousel, .barCarousel div {
   height: 100%;
 }
+.barBck {
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(0,0,0,0.55);
+}
 .carousel-fixed-item {
   position: absolute;
-  left: calc(50% - 100px);
-  bottom: 100px;
+  left: calc(50% - 90px);
+  bottom: 15%;
 }
 div[class*='barCarousel-'] {
   background-repeat: no-repeat;
