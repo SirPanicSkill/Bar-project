@@ -105,6 +105,7 @@ h6 {
 /* Links */
 a {
   text-decoration: none;
+  color: #41000c;
   -webkit-transition: color 0.1s ease;
   transition: color 0.1s ease;
   outline: 0;
@@ -560,30 +561,30 @@ div[class*=splitter] {
   background-image: url(../images/fd_04.jpg); 
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  -webkit-background-size: 100%; 
-  -moz-background-size: 100%; 
-  -o-background-size: 100%; 
-  background-size: 100%;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
   height: 100%;
 }
 .splitter-2{
   background: url(../images/fd_02.jpg); 
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  -webkit-background-size: 100%; 
-  -moz-background-size: 100%; 
-  -o-background-size: 100%; 
-  background-size: 100%;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover;
   height: 100%;
 }
 .splitter-3{
   background: url(../images/fd_05.jpg); 
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  -webkit-background-size: 100%; 
-  -moz-background-size: 100%; 
-  -o-background-size: 100%; 
-  background-size: 100%; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
   height: 100%;
 }
 #section-team{
@@ -640,13 +641,15 @@ footer.page-footer {
 }
 .footer {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
   position: relative;
   align-items: center;
   font-size: 18px;
   color: #fff;
   text-align: center;
-  width: 70%;
+  /* width: 70%; */
   padding: 5px 0;
   font-family: Georgia;
   font-weight: bold;
@@ -664,10 +667,20 @@ footer.page-footer {
     left: 0;
     z-index: 3;
     pointer-events: none;
+    opacity: 0.55;
   }
+.footer_img {
+  display: inline-block;
+  width: 200px;
+  height: 100%;
+}
+.footer > * {
+  padding: 0 20px;
+}
 a.zindex_link {
   position: relative;
   z-index: 10;
+  display: none;
 }
 footer.page-footer .footer-copyright {
   background-color: rgba(255, 255, 255, 0.08);
@@ -685,12 +698,12 @@ footer .btn-floating {
   only screen and (min-resolution: 120dpi),
   (pointer:coarse) {
   .splitter-1 {
-    background: url(../images/fd_04_mobile.jpg);
+    background-image: url(../images/fd_04_mobile.jpg);
   }
   .splitter-2 {
-    background: url(../images/fd_02_mobile.jpg);
+    background-image: url(../images/fd_02_mobile.jpg);
   }
   .splitter-3 {
-    background: url(../images/fd_05_mobile.jpg);
+    background-image: url(../images/fd_05_mobile.jpg);
   }
 }
