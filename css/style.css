@@ -1,27 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,100,700);
-@font-face {
-  font-family: "Roboto";
-  src:
-    local("Roboto Regular"),
-    url("../fonts/roboto/Roboto-Regular.woff") format("woff");
-}
-@font-face {
-  font-family: "Segoe UI Light";
-  src:
-    local("Segoe UI Light"),
-    url("../fonts/Segoe UI Light/Segoe UI Light.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "Georgia";
-  src:
-    local("Georgia"),
-    url("../fonts/Georgia/georgia.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
 /* normalize */
 html,
 body,
@@ -376,6 +352,10 @@ nav .brand-logo {
   height: 100%;
   position: relative;
 }
+.wrapperCarousel hr {
+  border-color: white;
+  width: 30%;
+}
 .barCarousel, .barCarousel div {
   height: 100%;
 }
@@ -399,16 +379,17 @@ div[class*='barCarousel-'] {
   background-size: cover;
 }
   .barCarousel-1 {
-    background-image: url(../images/backgr.jpg);
-  }
-  .barCarousel-2 {
     background-image: url(../images/backgr2.jpg);
   }
+  .barCarousel-2 {
+    background-image: url(../images/backgr6.jpg);
+  }
   .barCarousel-3 {
-    background-image: url(../images/backgr3.jpg);
+    background-image: url(../images/backgr4.jpg);
   }
   .barCarousel-4 {
-    background-image: url(../images/backgr4.jpg);
+    background-position: 0% 50% !important;
+    background-image: url(../images/backgr7.jpg);
   }
 
 
@@ -515,7 +496,7 @@ main {
   opacity: 0;
   position: relative;
   display: flex;
-  width: 70%;
+  width: 90%;
   text-align: left;
   color: #a7a7a7;
   padding-top: 1em;
@@ -656,6 +637,9 @@ footer.page-footer {
   margin: 0 auto;
   z-index: 2;
 }
+.footer > hr {
+  display: none;
+}
   footer:before {
     content: '';
     display: inline-block;
@@ -671,7 +655,7 @@ footer.page-footer {
   }
 .footer_img {
   display: inline-block;
-  width: 200px;
+  width: 150px;
   height: 100%;
 }
 .footer > * {
@@ -705,5 +689,17 @@ footer .btn-floating {
   }
   .splitter-3 {
     background-image: url(../images/fd_05_mobile.jpg);
+  }
+  /*footer*/
+  .footer {
+    flex-direction: column;
+  }
+  .footer > * {
+    padding: 0;
+  }
+  .footer hr {
+    display: block;
+    border-color: white;
+    padding: 0 30px;
   }
 }
